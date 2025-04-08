@@ -1,0 +1,58 @@
+
+<!-- Módulo de cadastro
+1- Neste modulo os elementos HTML acessam classes do bootstrap abaixo listadas:
+- bg-subtle;
+- border;
+- btn
+- btn-outline-success
+- col-sm-4;
+- col-form-label;
+- col-sm-10;
+- container;
+- p-2;
+- rounded my-3;
+ 
+2- Este módulo acessa o arquivo ./js/cadastro.js utilizando suas funções:
+cad(nome, telefone);
+escreveCadastro();
+escreveHTML();
+limparTela();
+
+3.1- Neste módulo estão disponíveis para o usuário dois input´s:
+ -primeiro de Nome do tipo texto;
+ -segundo telefone do tipo número.
+ 
+3.2- Seguido de 3 input´s do tipo botão que são responsáveis por:
+ - Primeiro cadastrar em um vetor que faz parte do arquivo cadastros.js denominado: cadastro[], 
+ executado pela função cad() que por sua vez recebe dois paramêtros nome e telefone "cad(nome.telefone)";
+ - Segundo Mostrar os dados do vetor cadastro[] utilizando a função  em cadastro.js, escreveHTML() que,
+ por sua vez alimente as informações na div id="mostrarCadastro" neste mesmo HTML
+ - Terceiro limpar a div id="mostrarCadastro" utilizando a função limparTela(); de cadastros.js.
+
+4- Este modulo é acessado pelo menu.html "Cadastro"
+ -->
+<div class="container border bg-subtle rounded my-3"> 
+    <label class="col-sm-4 col-form-label">Informe um Nome:</label>
+    <div class="col-sm-10">
+        <!-- input text do nome para cadastro no vetor -->
+        <input type="text" id="nome"> 
+    </div>
+    <label class="col-sm-4 col-form-label">Informe um Telefone:</label>
+    <div class="col-sm-10">
+        <!-- input text do número de telefone para cadastro no vetor -->
+        <input type="number" id="telefone">
+    </div>
+    <div class="col-sm-10 p-2">
+        <!-- botão que executa o cadastro chamando cad em cadastro.js, com a passagem dos parâmetros, nome e telefone -->
+        <input type="button" class="btn btn-outline-success" value="Cadastrar"
+            onclick="cad(document.getElementById('nome').value,document.getElementById('telefone').value)">
+    </div>
+    <div class="col-sm-10 p-2">
+        <!-- botão que mostra os elementos cadastrados no vetor de cadastro.js chamado pela função escreveHTML(); -->
+        <input type="button" class="btn btn-outline-success" value="Mostrar Cadastros" onclick="escreveHTML();">
+        <!-- botão que limpa a visualização dos elemnetos cadastrados e mostrados em tela pela função escreveHTML(); utilizando a função limaTela(); -->
+        <input type="button" class="btn btn-outline-success" value="Limpar Tela" onclick="limparTela();">
+    </div>
+    <!-- div que mostra os dados cadastrados utilizando a função escreveHTML(); bem como pode ser limpa utilizando a função limparTela() ambas do arquivo cadastro.js  -->
+    <div id="mostrarCadastro"> </div>
+</div>

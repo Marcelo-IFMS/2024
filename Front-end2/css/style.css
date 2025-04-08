@@ -1,0 +1,53 @@
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,121,145,1) 100%);
+    height: 99vh;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 99%;
+    padding: 5px;
+    margin: 1px;
+}
+
+.container-menu {
+    background: rgb(0,121,145);
+    background: linear-gradient(180deg, rgba(0,121,145,1) 0%, rgba(255,255,255,1) 100%);
+    text-align: center;
+}
+    
+.container-item1 {
+    background-color: bisque;
+    text-align: justify;
+}
+.container-item3 {
+    float: left;
+    width: calc(97% / 3);
+    min-width: 200px;
+    min-height: 10vh;
+    text-align: justify;
+    background-color: bisque;
+}
+
+/* 
+
+Conmplementos
+>IntelliSense for CSS class names in HTML
+
+F1>
+
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp  tamanho da tela reajuste
+*/

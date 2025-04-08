@@ -1,0 +1,9 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body{
+background: linear-gradient(180deg, rgba(11,182,204,1) 0%, rgba(1,248,123,1) 76%, rgba(0,0,0,1) 100%);
+  min-height: 100vh;
+}
+.conteudo {
+  height: auto !important;
+}

@@ -1,0 +1,19 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+body {
+  background: linear-gradient(180deg, rgba(224,254,225,1) 0%, rgba(128,232,62,1) 82%, rgba(2,103,36,1) 100%);
+  min-height: 100vh;
+}
+.conteudo {
+  height: auto !important;
+}
+
+
+.accordion{
+  --bs-accordion-color:#000000;
+  --bs-accordion-bg:#fcf7e6;
+  --bs-accordion-btn-bg: #005cd4;
+  --bs-accordion-btn-color:#fff;
+  --bs-accordion-active-bg: rgb(86, 173, 240);
+  --bs-accordion-active-color:#ffffff;
+
+}

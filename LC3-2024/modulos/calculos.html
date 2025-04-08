@@ -1,0 +1,19 @@
+<div class="container border bg-subtle rounded my-3" id="calculos">
+    <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-4 col-form-label">Informe o primeiro número:</label>
+        <div class="col-sm-10">
+            <input type="number" id="num1">
+        </div>
+        <label for="staticEmail" class="col-sm-4 col-form-label">Informe o segundo número:</label>
+        <div class="col-sm-10"> <input type="number" id="num2">
+            <input type="button" class="btn btn-outline-success" value="calculos"
+                onclick="document.getElementById('calculo').innerHTML = calculo(document.getElementById('num1').value,document.getElementById('num2').value)">
+        </div>
+        <p id="calculo">
+
+        </p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </div>
+</div>

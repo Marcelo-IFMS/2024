@@ -1,0 +1,55 @@
+<div id="js">
+    <div>
+        <input id="pi_input" type="range" min="1" max="201" step="10" />
+        <p>Value: <output id="value"></output></p>
+    </div>
+    <div id="dv1">
+        <div class="mt-2 container">
+            <button onclick="alertaTexto('Página JS')">Window Alert</button>
+            <button onclick="insereHTMLDV2('Boa tarde')">Troca Div 2</button>
+        </div>
+        <div class="mt-2 container">
+            <button onclick="textoInput()">Insere Texto</button>
+            <input type="text" id="texto">
+        </div>
+        <div class="mt-2 container">
+            <button onclick="trocatexto('Olá')">Muda texto</button>
+
+        </div>
+        <div class="mt-2 container">
+            <button onclick="trocaCor()">Troca Cor dv2</button>
+            <input type="text" id="cor">
+        </div>
+        <div class="mt-2 container">
+            <button onclick="aumentaFonte()">Aumentar Texto dv3</button>
+            <button onclick="reduzFonte()">Reduz Texto dv3</button>
+        </div>
+        <div class="mt-2 container">
+            <button onclick="tamanhoFonte('aumenta')">Aumentar dv3</button>
+            <button onclick="tamanhoFonte('reduz')">Reduz dv3</button>
+
+        </div>
+    </div>
+    <div id="dv2" class="mt-2 container"></div>
+    <div id="dv3" class="mt-2 container"></div>
+    <div id="dv4" style="width: 100%;
+                height: 200px; 
+                border: 3px solid rgb(255, 200, 0);">
+    </div>
+</div>
+<script type="text/javascript">
+
+   /* */ const elementoClick = document.getElementById("js");
+    elementoClick.addEventListener("click", (event) => {
+        console.log(event.offsetX, event.offsetY);
+    });
+
+ /**/
+    const value = document.querySelector("#value");
+    const input = document.querySelector("#pi_input");
+    input.addEventListener("input", (event) => {
+        value.textContent = input.value;
+        console.log(event.target.value);
+        document.getElementById('dv2').style.fontSize = event.target.value + 'px';
+    });
+</script>

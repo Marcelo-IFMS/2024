@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body{
+   background: rgb(255,255,255);
+   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(0,255,220,1) 61%, rgba(38,120,235,1) 100%); 
+   min-height: 100vh;
+}
+.grad{
+    background: linear-gradient(180deg, rgba(50,51,49,1) 0%, rgba(121,189,209,1) 100%);
+}

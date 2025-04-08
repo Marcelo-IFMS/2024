@@ -1,0 +1,20 @@
+.degrade-ifms {
+  background: rgb(0, 164, 11);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 164, 11, 1) 0%,
+    rgba(191, 238, 145, 1) 100%
+  );
+}
+.vermelho{
+  color: crimson;
+}
+.azul{
+  color: rgb(10, 131, 206);
+}
+.text-justify{
+  text-align: justify;
+}
+.primeira-linha{
+  text-indent: 2em;
+}
